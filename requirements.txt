@@ -8,4 +8,5 @@ scikit-learn
 transformers==4.52.4
 optuna
 seaborn
-torch
+torch==2.2.2+cpu
+--index-url https://download.pytorch.org/whl/cpu
