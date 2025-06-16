@@ -1,0 +1,10 @@
+streamlit
+matplotlib
+plotly
+pandas
+numpy
+wordcloud
+scikit-learn
+transformers==4.52.4
+optuna
+seaborn
