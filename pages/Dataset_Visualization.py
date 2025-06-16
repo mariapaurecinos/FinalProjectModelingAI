@@ -1,6 +1,35 @@
 import streamlit as st
 
+st.markdown("### Problem Definition and Dataset")
+
+st.markdown("""
+#### 📌 Problem Statement  
+This project addresses the **automated classification of news articles as either fake or real**, a critical Natural Language Processing (NLP) task in today’s digital information landscape.  
+The objective is to develop a model that can detect misinformation and support media credibility analysis.  
+This is especially relevant given the impact of fake news on public opinion, elections, and social trust.
+""")
+
+st.markdown("""
+#### 📂 Dataset Selection  
+I used the **Fake and Real News Dataset**, publicly available on [Kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset),  
+which contains over 21,000 labeled news articles with fields such as `title`, `text`, `subject`, and `date`.  
+The dataset is well-documented and offers a balanced representation of both classes, making it suitable for supervised learning.
+""")
+
+st.markdown("""
+#### ⚠️ Critical Analysis  
+Traditional fake news classifiers often rely on simple keyword matching or bag-of-words techniques,  
+which fail to capture the deeper semantic patterns present in misinformation. These approaches are limited in generalizability  
+and vulnerable to adversarial phrasing.  
+
+To overcome these challenges, I implemented a **transformer-based architecture**,  
+specifically [DistilBERT fine-tuned for fake news classification](https://huggingface.co/therealcyberlord/fake-news-classification-distilbert).  
+This model leverages contextual embeddings and transfer learning from large-scale language models,  
+achieving higher accuracy and robustness in classification.
+""")
+
 st.title("📊 Dataset Visualization")
+
 st.markdown("### Exploratory Data Analysis")
 st.write("""
 The dataset presents two classes: **Fake News** and **Real News**.
